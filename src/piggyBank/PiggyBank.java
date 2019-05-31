@@ -3,24 +3,40 @@ package piggyBank;
 //import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class PiggyBank{
+public abstract class PiggyBank{
 
     DecimalFormat fp = new DecimalFormat("$###,###.00");
 
-    private double dollars=0;
-    private double quarters=0;
-    private double dimes=0;
-    private double nickels=0;
-    private double pennies=0;
+    public double dollars;
+    public double quarters;
+    public double dimes;
+    public double nickels;
+    public double pennies;
 
-    public String getTotal(){
+    public PiggyBank(double dollars,double quarters,double dimes,double nickels,double pennies){
 
-        double total=(dollars*1.0+(quarters*.25)+(dimes*.10)+(nickels*.05)+(pennies*.01));
-        return "Dollars:"+ dollars + "\nquarters:" + quarters + "\ndimes:" + dimes + "\nnickels:" + nickels + "\npennies:" + pennies
-                +"\nThe Piggy Bank holds: "+ fp.format(total);
+      this.dollars=dollars;
+      this.quarters=quarters;
+      this.dimes=dimes;
+      this.nickels=nickels;
+      this.pennies=pennies;
+
+
     }
 
-    public void addDollar(){
+    public PiggyBank(){
+      dollars=0;
+      quarters=0;
+      dimes=0;
+      nickels=0;
+      pennies=0;
+    }
+
+    public abstract String getTotal();
+
+    
+
+   /* public void addDollar(){
         dollars++;
 
     }
@@ -35,6 +51,6 @@ public class PiggyBank{
     }
     public void addPenny(){
         pennies++;
-    }
+    }*/
 
 }

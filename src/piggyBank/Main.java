@@ -1,7 +1,8 @@
 package piggyBank;
-
 import java.util.Scanner;
 import static java.lang.System.out;
+import java.util.ArrayList;
+
 
 public class Main{
 
@@ -9,7 +10,8 @@ public class Main{
 
         int choice=8;
         
-        PiggyBank myPiggyBank = new PiggyBank();
+        MoneyAdder myPiggyBank = new MoneyAdder();
+       
 
         while (choice!=0) {
 
@@ -34,6 +36,7 @@ public class Main{
             if(choice == 2)
             {
               myPiggyBank.addDollar();
+             
             }
             if(choice == 3)
             {
@@ -58,4 +61,6 @@ public class Main{
         }
 
     }
+
+   
 }
