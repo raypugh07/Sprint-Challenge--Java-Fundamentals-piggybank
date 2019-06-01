@@ -1,4 +1,4 @@
-package piggyBank;
+/*package piggyBank;
 
 public class MoneyAdder extends PiggyBank{
 
@@ -27,4 +27,4 @@ public class MoneyAdder extends PiggyBank{
                   +"\nThe Piggy Bank holds: "+ fp.format(total);
       }
   
-  }
+  }*/
