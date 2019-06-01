@@ -1,4 +1,4 @@
-package piggyBank;
+/*package piggyBank;
 import java.util.Scanner;
 import static java.lang.System.out;
 import java.util.ArrayList;
@@ -60,6 +60,31 @@ public class Main{
 
         }
 
+    }
+
+   
+}*/
+package piggyBank;
+
+import static java.lang.System.out;
+
+
+
+public class Main{
+     
+     public static void main(String args[]){
+
+       PiggyBank myPiggyBank=new PiggyBank();
+
+       myPiggyBank.addCoin(new Dollar());
+       myPiggyBank.addCoin(new Quarter());
+       myPiggyBank.addCoin(new Dime());
+       myPiggyBank.addCoin(new Nickel());
+       myPiggyBank.addCoin(new Penny());
+
+       myPiggyBank.iGetMoney();
+
+       
     }
 
    

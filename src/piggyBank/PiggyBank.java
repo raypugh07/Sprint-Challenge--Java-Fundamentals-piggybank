@@ -1,4 +1,6 @@
 package piggyBank;
+
+/*package piggyBank;
 //import static java.lang.System.out;
 //import java.util.Scanner;
 import java.text.DecimalFormat;
@@ -51,6 +53,42 @@ public abstract class PiggyBank{
     }
     public void addPenny(){
         pennies++;
-    }*/
+    }
 
+}*/
+
+import java.util.ArrayList;
+import java.text.DecimalFormat;
+
+
+public class PiggyBank{
+
+  private ArrayList<Coin> coinArray= new ArrayList<Coin>();
+
+        DecimalFormat fp = new DecimalFormat("$###,###.00");
+
+
+        public PiggyBank(){
+
+        }
+
+        public void addCoin(Coin newCoin){
+          coinArray.add(newCoin);
+        }
+
+        public void iGetMoney(){
+          double arrayValue=0;
+           for (Coin coin : coinArray) {
+            System.out.println(coin.toString());
+            arrayValue += coin.getTotal();
+        }
+        System.out.println("The piggy bank holds " + fp.format(arrayValue));
+        }
+
+     
+
+
+   
+
+   
 }
