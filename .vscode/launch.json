@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Dollar",
+            "request": "launch",
+            "mainClass": "piggyBank.Dollar"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "piggyBank.Main"
+        }
+    ]
+}
